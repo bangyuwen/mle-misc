@@ -1,0 +1,78 @@
+{
+    "models": [
+        {
+            "title": "nzxt",
+            "provider": "ollama",
+            "model": "AUTODETECT",
+            "apiBase": "http://ubuntu-nzxt:11434"
+        }
+    ],
+    "slashCommands": [
+        {
+            "name": "edit",
+            "description": "Edit selected code"
+        },
+        {
+            "name": "comment",
+            "description": "Write comments for the selected code"
+        },
+        {
+            "name": "share",
+            "description": "Export this session as markdown"
+        },
+        {
+            "name": "cmd",
+            "description": "Generate a shell command"
+        }
+    ],
+    "customCommands": [
+        {
+            "name": "test",
+            "prompt": "Write a comprehensive set of unit tests for the selected code. It should setup, run tests that check for correctness including important edge cases, and teardown. Ensure that the tests are complete and sophisticated. Give the tests just as chat output, don't edit any file.",
+            "description": "Write unit tests for highlighted code"
+        }
+    ],
+    "contextProviders": [
+        {
+            "name": "code",
+            "params": {}
+        },
+        {
+            "name": "docs",
+            "params": {}
+        },
+        {
+            "name": "diff",
+            "params": {}
+        },
+        {
+            "name": "open",
+            "params": {}
+        },
+        {
+            "name": "terminal",
+            "params": {}
+        },
+        {
+            "name": "problems",
+            "params": {}
+        },
+        {
+            "name": "folder",
+            "params": {}
+        },
+        {
+            "name": "codebase",
+            "params": {}
+        }
+    ],
+    "tabAutocompleteModel": {
+        "title": "Starcoder 3b",
+        "provider": "ollama",
+        "model": "starcoder2:3b"
+    },
+    "allowAnonymousTelemetry": false,
+    "embeddingsProvider": {
+        "provider": "transformers.js"
+    }
+}
