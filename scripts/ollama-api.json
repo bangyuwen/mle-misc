@@ -1,0 +1,82 @@
+POST http://localhost:11434/api/generate HTTP/1.1
+content-type: application/json
+
+{
+    "model": "llama3",
+    "prompt": "Which planet is closest to the sun?",
+    "options": {
+        "num_gpu": 0
+    }
+}
+
+###
+
+POST http://localhost:11434/api/generate HTTP/1.1
+content-type: application/json
+
+{
+    "model": "llama3",
+    "prompt": "Which planet is closest to the sun?",
+    "options": {
+        "num_gpu": 1
+    }
+}
+
+###
+
+POST http://localhost:11434/api/generate HTTP/1.1
+content-type: application/json
+
+{
+    "model": "llama3",
+    "prompt": "Which planet is closest to the sun?"
+}
+
+###
+
+POST http://ubuntu-nzxt:11434/api/generate HTTP/1.1
+content-type: application/json
+
+{
+    "model": "llama3",
+    "prompt": "Which planet is closest to the sun?"
+}
+
+###
+
+POST http://localhost:11434/api/generate HTTP/1.1
+content-type: application/json
+
+{
+    "model": "llama3:70b",
+    "prompt": "Which planet is closest to the sun?",
+    "options": {
+        "num_gpu": 0
+    }
+}
+
+###
+
+POST http://localhost:11434/api/generate HTTP/1.1
+content-type: application/json
+
+{
+    "model": "codellama",
+    "keep_alive": -1,
+    "options": {
+        "num_gpu": 0
+    }
+}
+
+###
+
+POST http://localhost:11434/api/generate HTTP/1.1
+content-type: application/json
+
+{
+    "model": "codellama",
+    "keep_alive": 0,
+    "options": {
+        "num_gpu": 0
+    }
+}
